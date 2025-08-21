@@ -1,0 +1,137 @@
+.events-container {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.search-box {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #555;
+  background-color: #f0f0f0;
+  color: black;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+.events-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.events-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.events-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.events-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.event-button {
+  padding: 16px 24px;
+  font-size: 14px;
+  background: linear-gradient(45deg, #444, #666);
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-width: 144px;
+  flex-shrink: 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.event-button:hover {
+  background: linear-gradient(45deg, #555, #777);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  border-color: #ff891b;
+  animation: glow 1.5s infinite alternate;
+}
+
+.event-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 15px #ff891b, 0 0 25px #ff891b, 0 0 35px #ff891b;
+  }
+  100% {
+      box-shadow: 0 0 25px #ff891b, 0 0 35px #ff891b, 0 0 45px #ff891b;
+  }
+}
+
+.event-details {
+  flex: 2;
+  padding: 20px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.event-details h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.concert-image {
+  width: 55%;
+  height: auto;
+  max-width: 700px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-now {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.book-now:hover {
+  background-color: #444;
+}

@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f8e9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #0d47a1; 
+  color: white;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+h1 {
+  flex-grow: 1;
+  font-size: 1.5em;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #ffca28; 
+}
+
+.search-box {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #0d47a1; 
+}
+
+.login-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #ffca28; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #f57f17; 
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff; 
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 600px;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-button:nth-of-type(1) {
+  left: 10px;
+}
+
+.slider-button:nth-of-type(2) {
+  right: 10px;
+}
+
+.nav-button, .dropdown-toggle, .dropdown-item {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #0d47a1; 
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover, .dropdown-item:hover {
+  background-color: #ffca28; 
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

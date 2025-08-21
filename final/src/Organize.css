@@ -1,0 +1,78 @@
+.organize-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .organize-header {
+    text-align: center;
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .intro-section,
+  .experience-section,
+  .project-section,
+  .why-choose-us,
+  .book-now-section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #0073e6;
+    margin-bottom: 10px;
+  }
+  
+  p, ul {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul li img {
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+  }
+  
+  .section-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-now-section {
+    text-align: center;
+  }
+  
+  .book-now-button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-now-button:hover {
+    background-color: #005bb5;
+  }
+  
